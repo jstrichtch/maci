@@ -1,3 +1,51 @@
+Metadata-Version: 2.1
+Name: gcp-mlops-demo
+Version: 0.8.0.dev0
+Summary: An example project for doing MLOps on Vertex AI
+Author-email: Murat Eken <meken@google.com>
+License: MIT License
+        
+        Copyright (c) 2022-present Murat Eken
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: repository, https://github.com/meken/gcp-mlops-demo
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Provides-Extra: gcp
+Requires-Dist: kfp; extra == "gcp"
+Requires-Dist: google-cloud-aiplatform; extra == "gcp"
+Requires-Dist: google-cloud-pipeline-components; extra == "gcp"
+Provides-Extra: interactive
+Requires-Dist: matplotlib; extra == "interactive"
+Requires-Dist: seaborn; extra == "interactive"
+Requires-Dist: pandas-gbq; extra == "interactive"
+Requires-Dist: gcsfs; extra == "interactive"
+Requires-Dist: pyarrow; extra == "interactive"
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: flake8-pyproject; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+
 # gcp-mlops-demo
 
 This is a sample project that illustrates how to use [Vertex AI](https://cloud.google.com/vertex-ai) on GCP for building and running [MLOps workflows](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning#mlops_level_2_cicd_pipeline_automation).

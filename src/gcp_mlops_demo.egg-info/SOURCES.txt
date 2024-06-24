@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/gcp_mlops_demo.egg-info/PKG-INFO
+src/gcp_mlops_demo.egg-info/SOURCES.txt
+src/gcp_mlops_demo.egg-info/dependency_links.txt
+src/gcp_mlops_demo.egg-info/requires.txt
+src/gcp_mlops_demo.egg-info/top_level.txt
+src/trainer/__init__.py
+src/trainer/batch.py
+src/trainer/pipeline.py
+src/trainer/task.py
