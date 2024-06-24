@@ -63,4 +63,5 @@ steps:
       - dist/*.tar.gz
       - gs://$PROJECT_ID/code/
     
-
+options:
+  logging: CLOUD_LOGGING_ONLY
